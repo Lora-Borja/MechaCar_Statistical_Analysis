@@ -16,7 +16,7 @@ In order for me to grasp which variables/coefficients provided a non-random amou
 
 
 
-* Ground Clearance, Vehicle Length, and Vehicle Weight suggests have a statistically significant impact on MPG, which is assumed that these variable provided a non-random amount of variances to the dataset.
+* Ground Clearance, Vehicle Length, and Vehicle Weight suggests have a significant impact on MPG, which is assumed that these variable statistically provided a non-random amount of variances to the dataset.
 
 
 ![VehicleL_GroundC_vsMPG](https://github.com/Lora-Borja/MechaCar_Statistical_Analysis/blob/main/images/VehicleL_GroundC_vsMPG.png)
@@ -24,3 +24,16 @@ In order for me to grasp which variables/coefficients provided a non-random amou
 
 ![VehicleW_vsMPG](https://github.com/Lora-Borja/MechaCar_Statistical_Analysis/blob/main/images/VehicleW_vsMPG.png)
  
+
+## Summary Statistics on Suspension Coils
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Looking at our total summary, the current manufacting data meets the design specifications with a variance of 62.29. Based on individual lots, 1 and 2 meets design specifications with variances of 0.98 and 2.73 respectively. However, lot 3 does not meet design specification with a huge variance of 170.28
+
+* Total Statistics Summary 
+
+![total_summary](https://github.com/Lora-Borja/MechaCar_Statistical_Analysis/blob/main/images/total_summary.PNG)
+
+* Summary Statistics by Manufacturing Lot
+
+![lot_summary](https://github.com/Lora-Borja/MechaCar_Statistical_Analysis/blob/main/images/lot_summary.PNG)
+
