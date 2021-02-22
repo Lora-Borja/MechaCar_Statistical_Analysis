@@ -3,6 +3,9 @@
 # Use the library() function to load the dplyr package
 install.packages("dplyr")
 
+# Importing tidyverse
+library(tidyverse)
+
 # Import and read in the MechaCar_mpg.csv file as a dataframe
 mechacar_df <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
 
@@ -48,4 +51,17 @@ model <- lm(mpg ~ AWD,mechacar_df)
 yvals <- model$coefficients['AWD']*mechacar_df$AWD + model$coefficients['(Intercept)'] 
 plt <- ggplot(mechacar_df,aes(x=AWD,y=mpg)) 
 plt + geom_point() + geom_line(aes(y=yvals), color = "red")
+
+# Deliverable 2: Create Visualizations for the Trip Analysis
+
+# Import and read in the Suspension_Coil.csv file as a table
+Suspension_Coil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+
+# Create total_summary dataframe using the summarize() function 
+#to get the mean, median, variance, and standard deviation of the suspension coil's PSI column
+total_summary <- Suspension_Coil %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),Standard_Deviation=sd(PSI),.groups = 'keep')
+
+# Create lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing lot 
+# by the mean, median, variance, and standard deviation of the suspension coil's PSI column.
+lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI), Standard_Deviation=sd(PSI), .groups = 'keep')
 
