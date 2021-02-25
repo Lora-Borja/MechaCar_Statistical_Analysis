@@ -17,7 +17,7 @@ For me to grasp which variables/coefficients provided a non-random amount of var
 
 
 
-* Ground Clearance, Vehicle Length, and Vehicle Weight suggests have a significant impact on MPG, which is assumed that these variables statistically provided a non-random number of variances to the dataset.
+* Ground Clearance, Vehicle Length, and Vehicle Weight suggests these have a significant impact on MPG, which is assumed that these variables statistically provided a non-random number of variances to the dataset.
 
 
 ![VehicleL_GroundC_vsMPG](https://github.com/Lora-Borja/MechaCar_Statistical_Analysis/blob/main/images/VehicleL_GroundC_vsMPG.png)
